@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="row mt-5">
+    <h2>2. Calculadora</h2>
+  </div>
+
+  <div class="row mt-3">
+    <div class="col-md-4">
+      <label class="form-label"><strong>Número 1:</strong></label>
+      <input [(ngModel)]="num1" type="number" class="form-control" />
+    </div>
+    <div class="col-md-4">
+      <label class="form-label"><strong>Número 2:</strong></label>
+      <input [(ngModel)]="num2" type="number" class="form-control" />
+    </div>
+    <div class="col-md-4">
+      <label for="" class="form-label"><strong>Operação:</strong></label>
+      <select [(ngModel)]="operacao" class="form-select">
+        <option value="+">Somar</option>
+        <option value="-">Subtrair</option>
+        <option value="*">Multiplicar</option>
+        <option value="/">Dividir</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-12" style="text-align: center;">
+      <button class="btn btn-primary" (click)="calcular()">Calcular</button>
+    </div>
+  </div>
+
+  <div class="row mt-5" *ngIf="click" style="text-align: center;">
+    <p><strong>Resultado:</strong> {{resultado}}</p>
+  </div>
+  
+</div>

@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="row mt-5">
+        <h2>4. Cadastro Aluno</h2>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-md-3">
+            <label class="form-label"><strong>Nome:</strong></label>
+            <input [(ngModel)]="nome" type="text" class="form-control" />
+        </div>
+        <div class="col-md-3">
+            <label for="" class="form-label"><strong>Sexo:</strong></label>
+            <select [(ngModel)]="sexo" class="form-select">
+                <option value="Masculino">Masculino</option>
+                <option value="Feminino">Feminino</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <label class="form-label"><strong>Idade:</strong></label>
+            <input [(ngModel)]="idade" type="number" class="form-control" />
+        </div>
+        <div class="col-md-3">
+            <label class="form-label"><strong>Valor do Automóvel:</strong></label>
+            <div class="input-group mb-3">
+                <span class="input-group-text">R$</span>
+                <input [(ngModel)]="valor" type="number" class="form-control" />
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-2">
+        <div class="col-12" style="text-align: center;">
+            <button class="btn btn-primary" (click)="calcular_apolice()">Calcular</button>
+        </div>
+    </div>
+
+    <div class="row mt-5" *ngIf="click" style="text-align: center;">
+        <p><strong>Apólice:</strong> R$ {{apolice}}</p>
+        <p><strong>Valor Final do Automível:</strong> R$ {{valor}}</p>
+    </div>
+
+</div>

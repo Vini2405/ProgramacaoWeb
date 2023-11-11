@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="row mt-5">
+    <h2>3. Cadastro Aluno</h2>
+  </div>
+
+  <div class="row mt-3">
+    <div class="col-md-3">
+      <label class="form-label"><strong>RA:</strong></label>
+      <input [(ngModel)]="ra" type="text" class="form-control" required />
+    </div>
+    <div class="col-md-3">
+      <label class="form-label"><strong>Nome:</strong></label>
+      <input [(ngModel)]="nome" type="text" class="form-control" required />
+    </div>
+    <div class="col-md-3">
+      <label class="form-label"><strong>E-mail:</strong></label>
+      <input [(ngModel)]="email" type="text" class="form-control" required />
+    </div>
+    <div class="col-md-3">
+      <label class="form-label"><strong>Celular</strong></label>
+      <input [(ngModel)]="celular" type="text" class="form-control" required />
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-12" style="text-align: center;">
+      <button class="btn btn-primary" (click)="cadastrar()">Cadastrar</button>
+    </div>
+  </div>
+
+  <div class="row mt-5" *ngIf="click" style="text-align: center;">
+    <div class="col-12" *ngIf="cadastro">
+      <div class="alert alert-success" role="alert" *ngIf="cadastro">Cadastro efeituado com sucesso!</div>
+      <p><strong>RA:</strong> {{ra}}</p>
+      <p><strong>Nome:</strong> {{nome}}</p>
+      <p><strong>E-mail:</strong> {{email}}</p>
+      <p><strong>Celular:</strong> {{celular}}</p>
+    </div>
+
+    <div class="col-12" *ngIf="!cadastro">
+      <div class="alert alert-danger" role="alert" *ngIf="!cadastro">Preencha todos os campos!</div>
+    </div>
+  </div>
+
+</div>
