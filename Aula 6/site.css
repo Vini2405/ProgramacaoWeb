@@ -1,0 +1,66 @@
+body {
+    background-color: azure;
+    }
+    .inline{
+        display: inline;
+    }
+
+    .esquerda{
+        float: left;
+        margin: 0px;
+        background-color: rgb(20, 0, 131);
+        width: 60px;
+        height: 60px;
+    }
+
+    .direita{
+        float: right;
+        margin: 0px;
+        background-color: rgb(20, 0, 131);
+        width: 60px;
+        height: 60px;
+    }
+
+    .fixado{
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+    }
+
+    .menuSuspenso{
+        position: fixed;
+        text-align: center;
+        top: 10px;
+        color: white;
+        font-size: x-large;
+    }
+    
+    .container{
+    background-color: rgb(0, 128, 255);
+    border-radius: 20px;
+    margin: 0px auto;
+    max-width: 780px;
+    min-width: 400px;    
+    padding: 60px;
+    }
+
+    #titulo{
+        font-size: x-large;
+        font-family: Verdana;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    a:link{
+        color: darkgreen
+    }
+    a:hover{
+        font-size: 20px;
+    }
+    a:visited{
+        color: rgb(rgb(3, 211, 211), green, blue);
+    }
+    a:active{
+        color: orange;
+        font-size: 15px;
+    }

@@ -1,0 +1,122 @@
+.container{
+    background-color: rgb(255, 255, 255);
+    border-radius: 1px;
+    border-style: solid;
+    border-width: 5px 5px 5px 5px;
+    border-color: rgb(252, 134, 0) rgb(252, 134, 0) rgb(252, 134, 0) rgb(252, 134, 0);
+    margin: 0px auto;
+    max-width: 780px;
+    min-width: 400px;    
+    padding: 15px;
+    }
+
+.titulo_aperitivos{
+    text-align: center;
+    font: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(252, 134, 0);
+}
+
+.titulo_aperitivos::before{
+    content: '';
+    position: absolute;
+    width: 237px;
+    border-top: 3px solid rgb(252, 134, 0);
+    margin-top: 19px;
+    margin-left: -250px;
+}
+
+.titulo_aperitivos::after {
+    content: ' ';
+    position: absolute;
+    width: 236px;
+    border-top: 3px solid rgb(252, 134, 0);
+    margin-top: 19px;
+    margin-left: 13.5px;
+}
+
+.titulo_lanches{
+    text-align: center;
+    font: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(252, 134, 0);
+}
+
+.titulo_lanches::before{
+    content: '';
+    position: absolute;
+    width: 267px;
+    border-top: 3px solid rgb(252, 134, 0);
+    margin-top: 19px;
+    margin-left: -283px;
+}
+
+.titulo_lanches::after {
+    content: ' ';
+    position: absolute;
+    width: 267px;
+    border-top: 3px solid rgb(252, 134, 0);
+    margin-top: 19px;
+    margin-left: 16px;
+}
+
+.titulo_bebidas{
+    text-align: center;
+    font: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(252, 134, 0);
+}
+
+.titulo_bebidas::before{
+    content: '';
+    position: absolute;
+    width: 269px;
+    border-top: 3px solid rgb(252, 134, 0);
+    margin-top: 19px;
+    margin-left: -286px;
+}
+
+.titulo_bebidas::after {
+    content: ' ';
+    position: absolute;
+    width: 270px;
+    border-top: 3px solid rgb(252, 134, 0);
+    margin-top: 19px;
+    margin-left: 16px;
+}
+
+.opcoes_titulo{
+    padding-left: 20px;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.opcoes_detalhes{
+    padding-left: 20px;
+    font-size: medium;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.logo{
+    display: block;
+	margin: auto;
+	width: 200px;
+}
+
+.logo::after{
+    content: ' ';
+    position: absolute;
+    width: 270px;
+    border-top: 3px solid rgb(252, 134, 0);
+    margin-top: 19px;
+    margin-left: 16px;
+}
+
+.logo::before{
+    content: ' ';
+    position: absolute;
+    width: 270px;
+    border-top: 3px solid rgb(252, 134, 0);
+    border-width: 200px;
+    margin-top: 19px;
+    margin-left: 16px;
+}
